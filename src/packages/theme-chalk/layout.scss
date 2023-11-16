@@ -1,0 +1,11 @@
+.layout {
+  display: flex;
+  .aside {
+    width: 280px;
+    height: 100vh;
+    background-color: #191a23;
+  }
+  .layout-container {
+    flex: 1;
+  }
+}

@@ -1,0 +1,32 @@
+.s-menu {
+  &.el-menu {
+    background-color: #191a23;
+    border-right-color: #191a23;
+    .el-sub-menu__title {
+      color: #fff;
+      &:hover {
+        background-color: rgba(45, 46, 56, 0.7)
+      }
+    }
+    .el-sub-menu {
+      &.is-active,
+      &.is-opened {
+        .el-sub-menu__title {
+          background-color: rgba(45, 46, 56, 0.9)
+        }
+      }
+      .el-menu {
+        background-color: #191a23;
+        .el-menu-item {
+          .s-menu-name {
+            color: #fff;
+          }
+          &.is-active,
+          &:hover {
+            background-color: rgba(45, 46, 56, 0.7)
+          }
+        }
+      }
+    } 
+  }
+}

@@ -1,0 +1,12 @@
+.s-nav-menu {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+.nav-menu-item {
+  padding: 10px;
+  cursor: pointer;
+  &:hover {
+    background-color: #f1f1f1;
+  }
+}

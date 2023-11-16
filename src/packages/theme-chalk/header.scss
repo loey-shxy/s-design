@@ -1,0 +1,18 @@
+.s-header {
+  height: 70px;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #c9ccd1;
+  justify-content: space-between;
+  &__right,
+  &__left {
+    display: flex;
+    align-items: center;
+  }
+  &__right {
+    gap: 20px;
+    .el-icon {
+      cursor: pointer;
+    }
+  }
+}

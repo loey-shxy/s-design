@@ -1,0 +1,83 @@
+@use 'sass:math';
+@use 'sass:map';
+
+@use '../mixins/functions.scss' as *;
+
+$bg-color: #eefaf2;
+$border-color: #dcdfe6;
+
+$types: primary, success, warning, danger, error, red, info;
+
+$colors: () !default;
+$colors: map.deep-merge(
+  (
+    'white': #fff,
+    'black': #000,
+    'primary': (
+      'base': #669572,
+    ),
+    // 'success': (
+    //   'base': #67C23A,
+    // ),
+    'danger': (
+      'base': #ea697e
+    ),
+    'error': (
+      'base': #ea697e,
+    ),
+    'red': (
+      'base': #f88f8f,
+    ),
+    'info': (
+      'base': #4c5053,
+    )
+  ),
+  $colors
+);
+
+$color-white: map.get($colors, 'white') !default;
+$color-black: map.get($colors, 'black') !default;
+$color-primary: map.get($colors, 'primary') !default;
+$color-success: map.get($colors, 'success') !default;
+$color-warning: map.get($colors, 'warning') !default;
+$color-danger: map.get($colors, 'danger') !default;
+$color-error: map.get($colors, 'error') !default;
+$color-red: map.get($colors, 'red') !default;
+$color-info: map.get($colors, 'info') !default;
+
+$text-color: () !default;
+$text-color: map.merge(
+  (
+    'primary': #303133,
+    'regular': #4c5053,
+    'secondary': #909399,
+    'placeholder': #a8abb2,
+    'disabled': #c0c4cc,
+    'red': #f88f8f,
+    'error': #ea697e,
+    'link': #669572,
+    'success': #92e3a9,
+  ),
+  $text-color
+);
+
+$font-family: () !default;
+$font-family: map.merge(
+  (
+    '':
+      "'Helvetica Neue', Helvetica, 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', '微软雅黑', Arial, sans-serif"
+  ),
+  $font-family
+);
+
+$font-size: () !default;
+$font-size: map.merge(
+  (
+    'extra-large': 20px,
+    'large': 18px,
+    'medium': 16px,
+    'base': 14px,
+    'small': 12px,
+  ),
+  $font-size
+);

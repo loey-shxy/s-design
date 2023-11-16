@@ -1,0 +1,55 @@
+.nav-tab {
+  display: flex;
+  align-items: center;
+  height: 30px;
+  background-color: rgba(247, 248, 250, 1);
+  border-bottom: 1px solid rgba(211, 213, 219, 1);
+  border-left: none;
+  box-sizing: border-box;
+  > .el-icon {
+    width: 30px;
+    cursor: pointer;
+    height: 100%;
+  }
+  .container {
+    flex: 1;
+    max-width: 100%;
+    position: relative;
+    height: 100%;
+    overflow: hidden;
+    flex-shrink: 1;
+    .tab-row {
+      position: absolute;
+      left: 0;
+      top: -2px;
+      height: 100%;
+      line-height: 30px;
+      white-space: nowrap;
+      text-align: left;
+      .el-button--small {
+        height: 30px;
+        line-height: 30px;
+        border-radius: 0;
+        &+.el-button {
+          margin: 0;
+        }
+      }
+    }
+
+    .el-icon {
+      margin: 0 4px;
+      &:hover {
+        color: #1c1d1f;
+      }
+    }
+  }
+  .right-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 36px;
+    border-left: 1px solid #c9ccd1;
+    cursor: pointer;
+  }
+}
